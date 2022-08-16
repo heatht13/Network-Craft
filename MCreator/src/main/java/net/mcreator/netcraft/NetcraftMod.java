@@ -26,6 +26,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.netcraft.init.NetcraftModItems;
+import net.mcreator.netcraft.init.NetcraftModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -42,6 +45,8 @@ public class NetcraftMod {
 	public NetcraftMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		NetcraftModBlocks.REGISTRY.register(bus);
+		NetcraftModItems.REGISTRY.register(bus);
 
 	}
 
