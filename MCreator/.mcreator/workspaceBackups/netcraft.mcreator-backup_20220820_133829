@@ -15,14 +15,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "netswitch"
-    },
-    {
-      "name": "Modem",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "modem"
     }
   ],
   "variable_elements": [],
@@ -30,8 +22,7 @@
   "language_map": {
     "en_us": {
       "block.netcraft.router": "Router",
-      "block.netcraft.netswitch": "Netswitch",
-      "block.netcraft.modem": "Modem"
+      "block.netcraft.netswitch": "Netswitch"
     }
   },
   "foldersRoot": {
