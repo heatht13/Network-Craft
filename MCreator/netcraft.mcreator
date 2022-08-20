@@ -1,19 +1,28 @@
 {
   "mod_elements": [
     {
-      "name": "NetSwitch",
+      "name": "Router",
       "type": "block",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "net_switch"
+      "registry_name": "router"
+    },
+    {
+      "name": "Netswitch",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netswitch"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.netcraft.net_switch": "Net Switch"
+      "block.netcraft.router": "Router",
+      "block.netcraft.netswitch": "Netswitch"
     }
   },
   "foldersRoot": {

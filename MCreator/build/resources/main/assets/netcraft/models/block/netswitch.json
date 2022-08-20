@@ -3,6 +3,6 @@
   "textures": {
     "all": "netcraft:blocks/netswitch",
     "particle": "netcraft:blocks/netswitch",
-    "0": "netcraft:blocks/net"
+    "0": "netcraft:blocks/netswitch"
   }
 }

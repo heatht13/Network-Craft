@@ -14,18 +14,21 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.netcraft.block.NetSwitchBlock;
+import net.mcreator.netcraft.block.RouterBlock;
+import net.mcreator.netcraft.block.NetswitchBlock;
 import net.mcreator.netcraft.NetcraftMod;
 
 public class NetcraftModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, NetcraftMod.MODID);
-	public static final RegistryObject<Block> NET_SWITCH = REGISTRY.register("net_switch", () -> new NetSwitchBlock());
+	public static final RegistryObject<Block> ROUTER = REGISTRY.register("router", () -> new RouterBlock());
+	public static final RegistryObject<Block> NETSWITCH = REGISTRY.register("netswitch", () -> new NetswitchBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
-			NetSwitchBlock.registerRenderLayer();
+			RouterBlock.registerRenderLayer();
+			NetswitchBlock.registerRenderLayer();
 		}
 	}
 }

@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Net Switch",
+    "name": "Netswitch",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

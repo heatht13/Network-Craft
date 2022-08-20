@@ -1,3 +1,4 @@
 {
-  "block.netcraft.net_switch": "Net Switch"
+  "block.netcraft.router": "Router",
+  "block.netcraft.netswitch": "Netswitch"
 }
