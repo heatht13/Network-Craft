@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "NetSwitch",
+      "name": "SwitchBlock",
       "type": "block",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "net_switch"
+      "registry_name": "switch_block"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.netcraft.net_switch": "Net Switch"
+      "block.netcraft.switch_block": "Switch Block"
     }
   },
   "foldersRoot": {

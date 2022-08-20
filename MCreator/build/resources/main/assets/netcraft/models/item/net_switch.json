@@ -1,5 +1,5 @@
 {
-  "parent": "netcraft:block/switch_block",
+  "parent": "netcraft:block/net_switch",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -21,8 +21,8 @@ import net.mcreator.netcraft.init.NetcraftModBlocks;
 import java.util.List;
 import java.util.Collections;
 
-public class SwitchBlockBlock extends Block {
-	public SwitchBlockBlock() {
+public class NetSwitchBlock extends Block {
+	public NetSwitchBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -47,6 +47,6 @@ public class SwitchBlockBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(NetcraftModBlocks.SWITCH_BLOCK.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(NetcraftModBlocks.NET_SWITCH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

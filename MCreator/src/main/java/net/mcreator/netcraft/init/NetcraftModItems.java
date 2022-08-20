@@ -17,7 +17,7 @@ import net.mcreator.netcraft.NetcraftMod;
 
 public class NetcraftModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, NetcraftMod.MODID);
-	public static final RegistryObject<Item> SWITCH_BLOCK = block(NetcraftModBlocks.SWITCH_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> NET_SWITCH = block(NetcraftModBlocks.NET_SWITCH, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

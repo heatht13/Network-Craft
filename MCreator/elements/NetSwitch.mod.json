@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "net",
+    "texture": "netswitch",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Switch Block",
+    "name": "Net Switch",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
