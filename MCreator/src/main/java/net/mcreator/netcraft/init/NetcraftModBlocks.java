@@ -16,12 +16,14 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.netcraft.block.RouterBlock;
 import net.mcreator.netcraft.block.NetswitchBlock;
+import net.mcreator.netcraft.block.ModemBlock;
 import net.mcreator.netcraft.NetcraftMod;
 
 public class NetcraftModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, NetcraftMod.MODID);
 	public static final RegistryObject<Block> ROUTER = REGISTRY.register("router", () -> new RouterBlock());
 	public static final RegistryObject<Block> NETSWITCH = REGISTRY.register("netswitch", () -> new NetswitchBlock());
+	public static final RegistryObject<Block> MODEM = REGISTRY.register("modem", () -> new ModemBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -29,6 +31,7 @@ public class NetcraftModBlocks {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			RouterBlock.registerRenderLayer();
 			NetswitchBlock.registerRenderLayer();
+			ModemBlock.registerRenderLayer();
 		}
 	}
 }
